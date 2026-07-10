@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jiajian-coffee.pages.dev/sitemap.xml

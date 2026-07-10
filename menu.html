@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单 — 加减咖啡馆</title>
+    <meta name="description" content="加减咖啡馆菜单 — 手冲咖啡、意式咖啡、柴火面包、油泼面、特调饮品">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☯</span>
+                <span>加减咖啡馆</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#story">品牌故事</a></li>
+                <li><a href="index.html#categories">我们的出品</a></li>
+                <li><a href="index.html#pet">宠物友好</a></li>
+                <li><a href="index.html#info">到店指引</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 菜单内容 -->
+    <main class="menu-page">
+        <div class="container">
+            <div class="menu-header">
+                <h1>菜单</h1>
+                <p class="section-subtitle">以加减之法，呈平衡之味</p>
+            </div>
+
+            <!-- Tab 切换 -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="coffee">☕ 咖啡</button>
+                <button class="menu-tab" data-tab="bread">🍞 柴火面包</button>
+                <button class="menu-tab" data-tab="dessert">🍜 油泼面</button>
+                <button class="menu-tab" data-tab="special">🍵 特调饮品</button>
+            </div>
+
+            <!-- 咖啡 -->
+            <div class="menu-section active" id="coffee">
+                <div class="menu-item">
+                    <span class="menu-item-name">美式咖啡</span>
+                    <span class="menu-item-desc">经典美式，清爽回甘</span>
+                    <span class="menu-item-price">¥22</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">拿铁</span>
+                    <span class="menu-item-desc">意式浓缩与牛奶的黄金比例</span>
+                    <span class="menu-item-price">¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">卡布奇诺</span>
+                    <span class="menu-item-desc">绵密奶泡，浓醇口感</span>
+                    <span class="menu-item-price">¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">Dirty</span>
+                    <span class="menu-item-desc">冰牛奶与热浓缩的碰撞</span>
+                    <span class="menu-item-price">¥30</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">手冲咖啡</span>
+                    <span class="menu-item-desc">单一产地豆，当日烘焙</span>
+                    <span class="menu-item-price">¥38</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">冷萃咖啡</span>
+                    <span class="menu-item-desc">12小时低温萃取，顺滑醇厚</span>
+                    <span class="menu-item-price">¥32</span>
+                </div>
+            </div>
+
+            <!-- 柴火面包 -->
+            <div class="menu-section" id="bread">
+                <div class="menu-item">
+                    <span class="menu-item-name">柴火欧包</span>
+                    <span class="menu-item-desc">天然酵母，柴火窑烤，外脆内软</span>
+                    <span class="menu-item-price">¥25</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">全麦乡村面包</span>
+                    <span class="menu-item-desc">全麦面粉，低温长时间发酵</span>
+                    <span class="menu-item-price">¥28</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">核桃蔓越莓面包</span>
+                    <span class="menu-item-desc">满满果干与坚果的满足感</span>
+                    <span class="menu-item-price">¥32</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">柴火佛卡夏</span>
+                    <span class="menu-item-desc">迷迭香与海盐，意大利风味</span>
+                    <span class="menu-item-price">¥26</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">肉桂卷</span>
+                    <span class="menu-item-desc">柴火窑烤肉桂卷，香甜浓郁</span>
+                    <span class="menu-item-price">¥22</span>
+                </div>
+            </div>
+
+            <!-- 油泼面 -->
+            <div class="menu-section" id="dessert">
+                <div class="menu-item">
+                    <span class="menu-item-name">经典油泼面</span>
+                    <span class="menu-item-desc">手工扯面，热油激香，辣子过瘾</span>
+                    <span class="menu-item-price">¥18</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">加蛋油泼面</span>
+                    <span class="menu-item-desc">经典油泼面加一颗煎蛋</span>
+                    <span class="menu-item-price">¥22</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">牛肉油泼面</span>
+                    <span class="menu-item-desc">大块卤牛肉，配手工扯面</span>
+                    <span class="menu-item-price">¥30</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">素拼三合一</span>
+                    <span class="menu-item-desc">油泼 + 炸酱 + 西红柿鸡蛋</span>
+                    <span class="menu-item-price">¥28</span>
+                </div>
+            </div>
+
+            <!-- 特调饮品 -->
+            <div class="menu-section" id="special">
+                <div class="menu-item">
+                    <span class="menu-item-name">子午特调</span>
+                    <span class="menu-item-desc">冷萃咖啡基底，搭配桂花与蜂蜜</span>
+                    <span class="menu-item-price">¥36</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">八卦拿铁</span>
+                    <span class="menu-item-desc">双色拉花，黑白芝麻风味</span>
+                    <span class="menu-item-price">¥34</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">抹茶燕麦拿铁</span>
+                    <span class="menu-item-desc">日式抹茶 × 燕麦奶，清新健康</span>
+                    <span class="menu-item-price">¥32</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">桂花酒酿冰咖</span>
+                    <span class="menu-item-desc">酒酿与咖啡的奇妙平衡</span>
+                    <span class="menu-item-price">¥35</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">手打柠檬茶</span>
+                    <span class="menu-item-desc">新鲜柠檬手打，清爽解暑</span>
+                    <span class="menu-item-price">¥24</span>
+                </div>
+                <div class="menu-item">
+                    <span class="menu-item-name">洛神花气泡饮</span>
+                    <span class="menu-item-desc">洛神花 × 气泡水，酸甜清爽</span>
+                    <span class="menu-item-price">¥26</span>
+                </div>
+            </div>
+
+            <p class="menu-note">※ 菜单随季节调整，具体以门店当日出品为准</p>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">☯ 加减咖啡馆</div>
+            <p>子午镇 · 子午之间，一杯平衡 &nbsp;|&nbsp; &copy; 2026 加减咖啡馆</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
