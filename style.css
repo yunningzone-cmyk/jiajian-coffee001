@@ -4,16 +4,16 @@
 
 /* --- CSS Variables --- */
 :root {
-  --color-brown: #4A3226;
-  --color-brown-light: #6B4D3C;
-  --color-ink: #1C1C1C;
-  --color-cream: #F5F0E8;
-  --color-cream-dark: #E8E0D5;
-  --color-gold: #C8A87C;
-  --color-gold-light: #DDC7A8;
-  --color-charcoal: #3D3D3D;
-  --color-white: #FFFDF9;
-  --color-muted: #8B7E6F;
+  --color-brown: #1F3A5F;
+  --color-brown-light: #2E5580;
+  --color-ink: #1A1D24;
+  --color-cream: #F4F6F9;
+  --color-cream-dark: #E6EBF0;
+  --color-gold: #5A8AAA;
+  --color-gold-light: #8DB4CC;
+  --color-charcoal: #3A3F48;
+  --color-white: #FAFBFC;
+  --color-muted: #7B8695;
 
   --font-display: 'Georgia', 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif;
   --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
@@ -132,6 +132,12 @@ h1, h2, h3, .font-display {
   border-radius: 50%;
   object-fit: cover;
   border: 1.5px solid var(--color-gold);
+  animation: logoRotate 20s linear infinite;
+}
+
+@keyframes logoRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .nav-menu {
@@ -206,7 +212,7 @@ h1, h2, h3, .font-display {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 50%, #EDE4D8 100%);
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 50%, #E0E8F0 100%);
   overflow: hidden;
   padding-top: var(--nav-height);
 }
@@ -492,7 +498,7 @@ h1, h2, h3, .font-display {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 50%, #F5F0E8 100%);
+  background: linear-gradient(135deg, #E8EFF5 0%, #EEF2F8 50%, #F4F6F9 100%);
   border-radius: var(--radius-lg);
   padding: 3rem;
   aspect-ratio: 1;
