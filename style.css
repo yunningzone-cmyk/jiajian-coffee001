@@ -126,33 +126,12 @@ h1, h2, h3, .font-display {
   letter-spacing: 0.06em;
 }
 
-.logo-icon {
+.logo-img {
   width: 38px;
   height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  border: 1.5px solid var(--color-gold);
-  border-radius: var(--radius-full);
-  color: var(--color-brown);
-  position: relative;
-}
-
-/* bagua circle animation */
-.logo-icon::after {
-  content: '';
-  position: absolute;
-  inset: -3px;
   border-radius: 50%;
-  border: 1px solid transparent;
-  border-top-color: var(--color-gold);
-  border-bottom-color: var(--color-brown);
-  animation: logoSpin 6s linear infinite;
-}
-
-@keyframes logoSpin {
-  to { transform: rotate(360deg); }
+  object-fit: cover;
+  border: 1.5px solid var(--color-gold);
 }
 
 .nav-menu {
