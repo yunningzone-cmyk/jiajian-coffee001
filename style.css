@@ -4,16 +4,16 @@
 
 /* --- CSS Variables --- */
 :root {
-  --color-brown: #1F3A5F;
-  --color-brown-light: #2E5580;
-  --color-ink: #1A1D24;
-  --color-cream: #F4F6F9;
-  --color-cream-dark: #E6EBF0;
-  --color-gold: #5A8AAA;
-  --color-gold-light: #8DB4CC;
-  --color-charcoal: #3A3F48;
-  --color-white: #FAFBFC;
-  --color-muted: #7B8695;
+  --color-brown: #4A3226;
+  --color-brown-light: #6B4D3C;
+  --color-ink: #1C1C1C;
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #E8E0D5;
+  --color-gold: #C8A87C;
+  --color-gold-light: #DDC7A8;
+  --color-charcoal: #3D3D3D;
+  --color-white: #FFFDF9;
+  --color-muted: #8B7E6F;
 
   --font-display: 'Georgia', 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif;
   --font-body: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
@@ -212,7 +212,7 @@ h1, h2, h3, .font-display {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 50%, #E0E8F0 100%);
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 50%, #EDE4D8 100%);
   overflow: hidden;
   padding-top: var(--nav-height);
 }
@@ -390,13 +390,42 @@ h1, h2, h3, .font-display {
   justify-content: center;
 }
 
-.story-logo {
+.story-circle {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  object-fit: cover;
+  position: relative;
+  background: linear-gradient(135deg, var(--color-brown) 0%, var(--color-brown-light) 50%, var(--color-gold) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: storyBreathe 4s ease-in-out infinite;
+}
+
+.story-circle::before {
+  content: '☯';
+  font-size: 4rem;
+  color: var(--color-cream);
+  opacity: 0.9;
+}
+
+.story-circle-outer {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
   border: 1px solid rgba(200, 168, 124, 0.35);
-  box-shadow: var(--shadow-lg);
+  animation: storyBreatheOuter 4s ease-in-out infinite;
+}
+
+@keyframes storyBreathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes storyBreatheOuter {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 1; }
 }
 
 .story-text h2 {
@@ -498,7 +527,7 @@ h1, h2, h3, .font-display {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background: linear-gradient(135deg, #E8EFF5 0%, #EEF2F8 50%, #F4F6F9 100%);
+  background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 50%, #F5F0E8 100%);
   border-radius: var(--radius-lg);
   padding: 3rem;
   aspect-ratio: 1;
@@ -793,9 +822,16 @@ h1, h2, h3, .font-display {
   .story-visual {
     order: -1;
   }
-  .story-logo {
+  .story-circle {
     width: 200px;
     height: 200px;
+  }
+  .story-circle::before {
+    font-size: 3rem;
+  }
+  .story-circle-outer {
+    width: 240px;
+    height: 240px;
   }
   .story-text h2 {
     font-size: 1.5rem;
@@ -966,9 +1002,16 @@ h1, h2, h3, .font-display {
   .story {
     padding: 3rem 0;
   }
-  .story-logo {
+  .story-circle {
     width: 160px;
     height: 160px;
+  }
+  .story-circle::before {
+    font-size: 2.4rem;
+  }
+  .story-circle-outer {
+    width: 190px;
+    height: 190px;
   }
   .story-text h2 {
     font-size: 1.3rem;
